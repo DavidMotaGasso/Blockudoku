@@ -15,6 +15,10 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(np.count_nonzero(self.board.board), 0)
         self.assertEqual(self.board.board.shape, (9, 9))
 
+    def test_allow_block(self):
+        block1 = bd.BlockFactory.BLOCK_3
+        allow = self.board.allow_block(0, 0, block1) # How to enter r and c
+        self.assertTrue(allow)
 
 if __name__ == '__main__':
     unittest.main()
