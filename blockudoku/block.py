@@ -10,9 +10,8 @@ class Block:
     def get_score(self):
         return np.count_nonzero(self.block)
 
-    #def num_rows(self):
+    def num_rows(self):
+        return self.block.shape[0]
 
-
-    #def num_cols(self):
-
-
+    def num_cols(self):
+        return self.block.shape[1]
