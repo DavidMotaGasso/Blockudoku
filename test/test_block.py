@@ -8,7 +8,7 @@ import blockudoku as bd
 class TestBlock(unittest.TestCase):
 
     def test_get_score(self):
-        block1 = bd.Block(((True, False), (True, False), (True, True)))
+        block1 = bd.Block(((True, False), (True, False), (True, True)), (3,2))
         self.assertEqual(block1.get_score(), 4)
 
         block2 = bd.BlockFactory.BLOCK_2B
