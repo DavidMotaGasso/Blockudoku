@@ -7,14 +7,14 @@ class BlockFactory:
     # X
     BLOCK_1 = Block((True), (1,1))
 
-    # 2x1
-    # XX
-    BLOCK_2A = Block((True, True), (2,1))
-
     # 1x2
+    # XX
+    BLOCK_2A = Block((True, True), (1,2))
+
+    # 2x1
     # X
     # X
-    BLOCK_2B = Block(((True), (True)), (1,2))
+    BLOCK_2B = Block(((True), (True)), (2,1))
 
     # 2x2
     # XX
